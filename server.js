@@ -8,7 +8,7 @@ const { MONGOBD_URL } = require('./config')
 mongoose.connect(MONGOBD_URL);
 
 
-mongoose.set('strictQuery', true);
+mongoose.set('strictQuery', false);
 
 mongoose.connection.on('connected', () => {
     console.log("DB connected");
